@@ -21,12 +21,15 @@ const TaskList = ({ tasks, addTask, deleteTask, toggleTask }) => {
         <div className="task-list">
             <div className="add-bar">
                 <form onSubmit={handleAddTask}>
-                    <input type="text" placeholder="Ajouter une tâche" value={newTask} onChange={handleInputChange} />
+                    <input type="text" placeholder="Nom de la tâche" value={newTask} onChange={handleInputChange} />
                     <button type="submit">Ajouter une tâche</button>
                 </form>
             </div>
             <hr />
-            <h2>Liste des tâches</h2>
+            <div className="list-title">
+                <h2>Liste des tâches</h2>
+                <span className="task-count">{tasks.length} tâche(s)</span>
+            </div>
             <ul>
                 {tasks.map((task) => (
                     <Task key={task.id} task={task} deleteTask={deleteTask} toggleTask={toggleTask} />

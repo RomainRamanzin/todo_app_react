@@ -58,11 +58,22 @@
   margin: 20px 0;
 }
 
-.task-list h2 {
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-title h2 {
   color: white;
   font-size: 24px;
   margin: 0;
-  margin-bottom: 20px;
+}
+
+.task-count {
+  color: white;
+  font-size: 15px;
 }
 
 .task-list ul {
@@ -81,6 +92,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-task {
+  cursor: pointer;
 }
 
 .completed {
@@ -119,3 +140,4 @@
   cursor: pointer;
   border: none;
 }
+
