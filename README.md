@@ -1,6 +1,8 @@
 # Mon Projet de Gestion des Tâches
 Ce projet est une simple application de gestion des tâches construite avec React. Il permet d'ajouter, de supprimer et de marquer des tâches comme terminées.
 
+![Capture d'écran de l'application](./public/capture-appli.png)]
+
 ## Fonctionnalités
 - Ajouter une nouvelle tâche
 - Supprimer une tâche existante
