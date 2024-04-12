@@ -1,38 +1,121 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-image: url("https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg?download=true");
+  background-size: cover;
+}
+
+.task-list {
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.add-bar form{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+
+}
+
+.add-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: lightgrey;
+  color: black;
+  font-size: 16px;
+  border: 1px solid lightgrey;
+}
+
+.add-bar input::placeholder {
+  color: grey;
+}
+
+.add-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0197F6;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.task-list hr {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list ul li {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn{
+  background: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.done-btn{
+  background: grey;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.undone-btn{
+  background: green;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
 }
