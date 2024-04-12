@@ -11,12 +11,12 @@ Suivez ces étapes pour installer et lancer le projet sur votre machine locale :
 
 1. Clonez ce dépôt sur votre machine locale en utilisant la commande suivante :
 ```bash
-cd
+git clone https://github.com/RomainRamanzin/todo_app_react.git
 ```
 
 2. Naviguez vers le répertoire du projet :
 ```bash
-ds
+cd todo_app_react
 ```
 
 3. Installez les dépendances du projet :
