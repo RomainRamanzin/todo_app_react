@@ -7,6 +7,7 @@ Ce projet est une simple application de gestion des tâches construite avec Reac
 - Ajouter une nouvelle tâche
 - Supprimer une tâche existante
 - Marquer une tâche comme terminée
+- Enregistrement des tâches dans le LocalStorage 
 
 ## Installation
 Suivez ces étapes pour installer et lancer le projet sur votre machine locale :
